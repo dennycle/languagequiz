@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("form#characterQuiz").submit(function(event) {
+    var name = $("input#name").val();
     var mind = parseInt($("select#mind").val());
     var care = parseInt($("select#care").val());
     var company = parseInt($("select#company").val());
@@ -7,6 +8,7 @@ $(document).ready(function() {
     var problem = parseInt($("select#problem").val());
     var score = mind + care + company + subject + problem;
 
+    $(".name").text(name);
     $(".results").children().hide();
     if(score <= 14){
       $(".css").show();

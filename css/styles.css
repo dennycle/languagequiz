@@ -1,3 +1,7 @@
 .php, .java, .css, .csharp {
   display: none;
 }
+
+body {
+  text-align: center;
+}
