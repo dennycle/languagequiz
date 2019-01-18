@@ -11,123 +11,63 @@
     <div class="container">
       <h1>Which Programming Language Should You Learn?</h1>
       <br>
-      <form id="languageQuiz">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input id="name" class="form-control" type="text">
-        </div>
-        <div class="q1">
-          <h5>What's type of programming are you most interesting in?</h5>
-          <div class="radio">
-            <label>
-              <input type="radio" name="end" value="design" checked>
-              Front-End
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="end" value="vanilla">
-              Back-End
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="end" value="cookiesandcream">
-              Full Stack
-            </label>
-          </div>
-        </div>
-        <div class="q2"
-          <h5>What's Your Favorite Ice Cream Flavor?</h5>
-          <div class="radio">
-            <label>
-              <input type="radio" name="second" value="chocolate" checked>
-              Chocolate
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="second" value="vanilla">
-              Vanilla
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="second" value="cookiesandcream">
-              Cookies & Cream
-            </label>
-          </div>
-        </div>
-        <div class="q3">
-          <h5>What's Your Favorite Ice Cream Flavor?</h5>
-          <div class="radio">
-            <label>
-              <input type="radio" name="third" value="chocolate" checked>
-              Chocolate
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="third" value="vanilla">
-              Vanilla
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="third" value="cookiesandcream">
-              Cookies & Cream
-            </label>
-          </div>
-        </div>
-        <div class="q4">
-          <h5>What's Your Favorite Ice Cream Flavor?</h5>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="chocolate" checked>
-              Chocolate
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="vanilla">
-              Vanilla
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="flavor" value="cookiesandcream">
-              Cookies & Cream
-            </label>
-          </div>
-        </div>
-
-        <label for="magic">What Magic Power Do You Want Most?</label>
-        <select class="form-control" id="magic">
-          <option value="1">Ability to Fly</option>
-          <option value="3">Invisibility</option>
-          <option value="5">Telekenisis</option>
-          <option value="7">Mind-Reading</option>
-          <option value="9">Teleportation</option>
+      <form id="characterQuiz">
+        <label for="mind">Which way of thinking do you identify the most with?</label>
+        <select class="form-control" id="mind">
+          <option value="1">Creative</option>
+          <option value="3">Practical</option>
+          <option value="5">Logical</option>
+          <option value="7">Analytical</option>
         </select>
         <br>
+        <label for="care">Which part of web developing do you care most about?</label>
+        <select class="form-control" id="care">
+          <option value="1">How nice the website looks</option>
+          <option value="3">How cohesive everything works together</option>
+          <option value="7">How well the website functions</option>
+          <option value="5">I care about all of the above equally</option>
+        </select>
+        <br>
+        <label for="company">What kind of company environment would you want to work in?</label>
+        <select class="form-control" id="company">
+          <option value="1">Any!</option>
+          <option value="3">A small company</option>
+          <option value="5">A medium-sized company</option>
+          <option value="7">A big brand company</option>
+        </select>
+        <br>
+        <label for="subject">Which of these subjects was you favorite in school?</label>
+        <select class="form-control" id="subject">
+          <option value="1">Art</option>
+          <option value="3">English</option>
+          <option value="5">Science</option>
+          <option value="7">Math</option>
+        </select>
+        <br>
+        <label for="problem">What do you do when you're working and are faced with a problem you aren't sure how to solve? </label>
+        <select class="form-control" id="problem">
+          <option value="1">I give up and do something else</option>
+          <option value="3">I ask a colleague for help</option>
+          <option value="5">I try my best to solve it and if I can't, I ask for help</option>
+          <option value="7">I try every solution I can come up with until I fix it myself</option>
+        </select>
+        <br>
+
         <button type="submit" class="btn btn-danger"><span class="submit">Submit</span></button>
       </form>
       <br>
       <div class="results">
-        <div class="ruby">
-          <p><span class="answer"><span class="name"></span>, you should learn Ruby/Rails!</span></p>
-        </div>
-        <div class="php">
-          <p><span class="answer"><span class="name"></span>, you should learn PHP/Drupal!</span></p>
+        <div class="css">
+          <p><span class="answer">you should learn CSS!</span></p>
         </div>
         <div class="java">
-          <p><span class="answer"><span class="name"></span>, you should learn Java/Android!</span></p>
+          <p><span class="answer">you should learn Java!</span></p>
         </div>
-        <div class="css">
-          <p><span class="answer"><span class="name"></span>, you should learn CSS/Design!</span></p>
+        <div class="php">
+          <p><span class="answer">you should learn PHP!</span></p>
         </div>
         <div class="csharp">
-          <p><span class="answer"><span class="name"></span>, you should learn C#/.NET!</span></p>
+          <p><span class="answer">you should learn C#!</span></p>
         </div>
       </div>
     </div>

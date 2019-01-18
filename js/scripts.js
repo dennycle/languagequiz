@@ -1,36 +1,25 @@
 $(document).ready(function() {
-  $("input[type='button']").click(function() {
-    var end = parseInt($("input:radio[name=end]:checked").val());
-    var genre = parseInt($("select#genre").val());
-    var magic = parseInt($("select#magic").val());
-    var score = end + genre + magic ;
+  $("form#characterQuiz").submit(function(event) {
+    var mind = parseInt($("select#mind").val());
+    var care = parseInt($("select#care").val());
+    var company = parseInt($("select#company").val());
+    var subject = parseInt($("select#subject").val());
+    var problem = parseInt($("select#problem").val());
+    var score = mind + care + company + subject + problem;
 
     $(".results").children().hide();
-    if(score <= 7 ){
-      $(".ruby").show();
-    }
-    else if(score > 7 && score <= 11){
-      $(".php").show();
-    }
-    else if(score > 11 && score <= 15){
-      $(".java").show();
-    }
-    else if(score === end){
+    if(score <= 14){
       $(".css").show();
     }
-    else if(score > 19 && score <= 23){
+    else if(score > 14 && score <= 21){
+      $(".java").show();
+    }
+    else if(score > 21 && score <= 28){
+      $(".php").show();
+    }
+    else if(score > 28 && score <= 35){
       $(".csharp").show();
     }
     event.preventDefault();
   });
 });
-
-$(document).ready(function(){
-       $("input[type='button']").click(function(){
-           var radioValue = $("input[name='gender']:checked").val();
-           if(radioValue){
-               alert("Your are a - " + radioValue);
-           }
-       });
-
-   });
