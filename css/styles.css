@@ -1,7 +1,26 @@
-.php, .java, .css, .csharp {
+.php, .java, .css, .csharp, .help-block {
   display: none;
 }
 
 body {
   text-align: center;
+  background-color: teal;
+  color: white;
+}
+label {
+  font-size: 20px;
+}
+.help-block {
+  color: yellow;
+}
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.form-control {
+  font-size: 16px;
+}
+h1 {
+  font-size: 45px;
 }

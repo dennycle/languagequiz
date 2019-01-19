@@ -9,7 +9,13 @@ $(document).ready(function() {
     var score = mind + care + company + subject + problem;
 
     $(".name").text(name);
+    $(".form-group").removeClass("has-error");
+    $(".help-block").hide();
     $(".results").children().hide();
+    if (!name) {
+      $(".name").addClass("has-error");
+      $("#help-block").show();
+    }
     if(score <= 14){
       $(".css").show();
     }

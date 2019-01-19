@@ -12,68 +12,75 @@
       <h1>Which Programming Language Should You Learn?</h1>
       <br>
       <form id="characterQuiz">
-        <div class="form-group">
-          <label for="name">Your name: </label>
-          <input id="name" class="form-control" type="text">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="name">Your name: </label>
+              <input id="name" class="form-control" type="text">
+              <span id="help-block" class="help-block">Please enter your name.</span>
+            </div>
+            <label for="mind"><strong>1.</strong> Which way of thinking do you identify the most with?</label>
+            <select class="form-control" id="mind">
+              <option value="1">Creative</option>
+              <option value="3">Practical</option>
+              <option value="5">Logical</option>
+              <option value="7">Analytical</option>
+            </select>
+            <br>
+            <label for="care"><strong>2.</strong> Which part of web developing do you care most about?</label>
+            <select class="form-control" id="care">
+              <option value="1">How nice the website looks</option>
+              <option value="3">How cohesive everything works together</option>
+              <option value="7">How well the website functions</option>
+              <option value="5">I care about all of the above equally</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="company"><strong>3.</strong> Which kind of company environment would you most want to work in?</label>
+            <select class="form-control" id="company">
+              <option value="1">Any!</option>
+              <option value="3">A small company</option>
+              <option value="5">A medium-sized company</option>
+              <option value="7">A big brand company</option>
+            </select>
+            <br>
+            <label for="subject"><strong>4.</strong> Which of these subjects was you favorite in school?</label>
+            <select class="form-control" id="subject">
+              <option value="7">Math</option>
+              <option value="3">English</option>
+              <option value="5">Science</option>
+              <option value="1">Art</option>
+            </select>
+            <br>
+          </div>
+          <div class="col-md-4">
+            <label for="problem"><strong>5.</strong> What do you do when you're working and are faced with a problem you aren't sure how to solve? </label>
+            <select class="form-control" id="problem">
+              <option value="1">I give up and do something else</option>
+              <option value="3">I ask a colleague for help</option>
+              <option value="5">I try my best to solve it and if I can't, I ask for help</option>
+              <option value="7">I try every solution I can come up with until I fix it myself</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-info"><span class="submit">Submit</span></button>
+            <br>
+            <div class="results">
+              <div class="css">
+                <p><span class="name"></span>, you've got the mind of a designer. You should learn CSS!</p>
+              </div>
+              <div class="java">
+                <p><span class="name"></span>, it sounds like you'd be capable of learning any programming language. We suggest you start with one of the most popular language and learn Java!</p>
+              </div>
+              <div class="php">
+                <p><span class="name"></span>, we think you've got what it takes to be a back-end programmer. You should learn PHP!</p>
+              </div>
+              <div class="csharp">
+                <p><span class="name"></span>, it sounds like you want to work in the big leagues. You should learn C#!</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <label for="mind">Which way of thinking do you identify the most with?</label>
-        <select class="form-control" id="mind">
-          <option value="1">Creative</option>
-          <option value="3">Practical</option>
-          <option value="5">Logical</option>
-          <option value="7">Analytical</option>
-        </select>
-        <br>
-        <label for="care">Which part of web developing do you care most about?</label>
-        <select class="form-control" id="care">
-          <option value="1">How nice the website looks</option>
-          <option value="3">How cohesive everything works together</option>
-          <option value="7">How well the website functions</option>
-          <option value="5">I care about all of the above equally</option>
-        </select>
-        <br>
-        <label for="company">What kind of company environment would you want to work in?</label>
-        <select class="form-control" id="company">
-          <option value="1">Any!</option>
-          <option value="3">A small company</option>
-          <option value="5">A medium-sized company</option>
-          <option value="7">A big brand company</option>
-        </select>
-        <br>
-        <label for="subject">Which of these subjects was you favorite in school?</label>
-        <select class="form-control" id="subject">
-          <option value="1">Art</option>
-          <option value="3">English</option>
-          <option value="5">Science</option>
-          <option value="7">Math</option>
-        </select>
-        <br>
-        <label for="problem">What do you do when you're working and are faced with a problem you aren't sure how to solve? </label>
-        <select class="form-control" id="problem">
-          <option value="1">I give up and do something else</option>
-          <option value="3">I ask a colleague for help</option>
-          <option value="5">I try my best to solve it and if I can't, I ask for help</option>
-          <option value="7">I try every solution I can come up with until I fix it myself</option>
-        </select>
-        <br>
-
-        <button type="submit" class="btn btn-danger"><span class="submit">Submit</span></button>
       </form>
-      <br>
-      <div class="results">
-        <div class="css">
-          <p><span class="name"></span>, you should learn CSS!</p>
-        </div>
-        <div class="java">
-          <p><span class="name"></span>, you should learn Java!</p>
-        </div>
-        <div class="php">
-          <p><span class="name"></span>, you should learn PHP!</p>
-        </div>
-        <div class="csharp">
-          <p><span class="name"></span>, you should learn C#!</p>
-        </div>
-      </div>
     </div>
   </body>
 </html>
